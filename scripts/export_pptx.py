@@ -48,7 +48,7 @@ def add_runs(p, text, theme, base_color, em_hex=None):
         if not seg: continue
         if seg.startswith("**") and seg.endswith("**"):
             r = p.add_run(); r.text = seg[2:-2]; r.font.bold = True
-            r.font.color.rgb = hexc(theme["colors"]["navy"])
+            r.font.color.rgb = hexc(theme["colors"].get("bold_color", theme["colors"]["navy"]))
         elif seg.startswith("*") and seg.endswith("*"):
             r = p.add_run(); r.text = seg[1:-1]; r.font.bold = True
             r.font.color.rgb = hexc(em)

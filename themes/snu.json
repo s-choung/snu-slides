@@ -7,7 +7,7 @@
     "support": { "Accent": "#4472C4", "Maroon": "#840032", "Cyan": "#00B0F0", "SlateGray": "#697A82" },
     "gradient_stops": { "navy_grad0": "#060634", "deep_indigo": "#161570", "midnight": "#0C1238" },
     "fonts": { "ko": "맑은 고딕 (Malgun Gothic)", "en": "Arial" },
-    "note": "이 테마는 toolkit의 원본 정체성(navy 0F0F70 + gold C5A86F)이다. recolor_map의 SOURCE 키(0F0F70/C5A86F/...)와 출력색이 동일해 클론 컴포넌트가 원본색 그대로 렌더된다. 강조 인라인/카드헤드는 흰 배경 가독성을 위해 Maroon(em_color #840032)으로 둔다(네이비 bold와 구분). 골드 pill 텍스트는 흰색."
+    "note": "이 테마는 toolkit의 원본 정체성(navy 0F0F70 + gold C5A86F)이다. recolor_map의 SOURCE 키(0F0F70/C5A86F/...)와 출력색이 동일해 클론 컴포넌트가 원본색 그대로 렌더된다. 본문은 검정(#1A1A1A) 기본, 인라인 강조(**bold**/*em*)만 빨강(bold_color/em_color #C00000)으로 통일한다. 카드 헤드·배너·번호블록·pill 등 구조 요소는 navy/gold 유지, 골드 pill 텍스트는 흰색."
   },
   "colors": {
     "navy":         "#0F0F70",
@@ -19,20 +19,21 @@
     "muted":        "#697A82",
     "gray":         "#888888",
     "line":         "#D8D8D8",
-    "accent_orange":"#840032",
+    "accent_orange":"#C00000",
     "accent_cyan":  "#00B0F0",
-    "accent_red":   "#FF0000",
+    "accent_red":   "#C00000",
     "card_bg":      "#FFFFFF",
     "page_bg":      "#FFFFFF",
     "banner_g1":    "#E9E9F2",
     "banner_g2":    "#D7D7E6",
     "chip_text":    "#FFFFFF",
-    "em_color":     "#840032"
+    "bold_color":   "#C00000",
+    "em_color":     "#C00000"
   },
   "gradients": {
     "numblock": "linear-gradient(315deg, #060634 11%, #0F0F70 56%)",
     "cover":    "linear-gradient(135deg, #0C1238 0%, #0F0F70 60%, #060634 140%)",
-    "banner":   "linear-gradient(90deg, rgba(15,15,112,0.06) 0%, rgba(255,255,255,0.55) 70%, #ffffff 100%)",
+    "banner":   "linear-gradient(90deg, rgba(15,15,112,0.035) 0%, rgba(255,255,255,0.85) 55%, #ffffff 100%)",
     "timeline": "linear-gradient(180deg, #C5A86F 0%, #0F0F70 37%)"
   },
   "banner": {

@@ -171,7 +171,7 @@ html,body{{height:100%;background:#000;overflow:hidden;font-family:{fonts};color
  overflow:hidden;display:none}}
 .slide.active{{display:block}}
 .em{{color:{c.get('em_color', c['gold'])};font-weight:700}}
-b{{color:{c['navy']}}}
+b{{color:{c.get('bold_color', c['navy'])};font-weight:700}}
 /* banner */
 .banner{{position:absolute;top:0;left:0;right:0;height:{ly['banner_h']}px}}
 .bannerbg{{position:absolute;inset:0;background:{gr.get('banner','#fff')}}}
