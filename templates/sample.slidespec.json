@@ -1,0 +1,36 @@
+{
+  "theme": "skku",
+  "title": "SKKU Sample Deck",
+  "slides": [
+    { "layout": "cover", "title": "AI-Driven Catalyst Discovery",
+      "subtitle": "From Computation to Autonomous Experiment",
+      "meta": "2026 · Seokhyun Choung" },
+    { "layout": "section", "chapter": "01", "kicker": "Part 1", "title": "Research Overview" },
+    { "layout": "content", "chapter": "01", "section": "1.1", "kicker": "Introduction",
+      "title": "Why Multi-Agent Catalysis?",
+      "body": [
+        { "type": "p", "text": "We combine **MLIP simulation** with *LLM agents* to close the discovery loop." },
+        { "type": "h", "text": "Key capabilities" },
+        { "type": "bullets", "check": true,
+          "items": ["Reaction pathway prediction", "Active-site screening", "Autonomous validation"] }
+      ],
+      "footer": "Expanding *CatAgent* workflows to batteries, sensors, and polymers." },
+    { "layout": "cards", "chapter": "02", "section": "2.1", "kicker": "Approach",
+      "title": "Three Pillars", "cols": 3,
+      "cards": [
+        { "head": "Understand", "accent": "navy", "text": "DFT + interpretable descriptors." },
+        { "head": "Design", "accent": "gold", "text": "Data-driven design principles." },
+        { "head": "Accelerate", "accent": "navy", "text": "LLM-guided discovery at scale." }
+      ] },
+    { "layout": "content", "chapter": "02", "section": "2.2", "kicker": "Results",
+      "title": "Performance", "body": [
+        { "type": "kpi", "items": [
+          { "value": "9.65×", "label": "discovery rate" },
+          { "value": "150M", "label": "5-year budget" },
+          { "value": "16", "label": "GPU-hours" } ] },
+        { "type": "table", "head": ["Year", "Specs", "Cost"],
+          "rows": [["2027", "RTX A6000 48GB", "7M"], ["2028", "LLM API", "1.7M"]] }
+      ] },
+    { "layout": "closing", "title": "Thank You", "subtitle": "Understand · Design · Accelerate" }
+  ]
+}

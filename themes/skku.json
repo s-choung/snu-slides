@@ -1,0 +1,70 @@
+{
+  "name": "SKKU",
+  "label": "SKKU navy/gold academic deck (measured from the 정석현 reference .pptx). NOTE: reference-deck custom navy/gold, NOT SKKU official CI (official: Navy #072B61 / Green #8DC63F). See DESIGN_SYSTEM.md.",
+  "logo": "skku.png",
+  "official_ci": {
+    "source": "https://www.skku.edu/skku/about/symbol/symbol_01.do",
+    "primary": { "Navy": "#072B61 (PANTONE 541C)", "SungkyunGreen": "#8DC63F (367C)" },
+    "secondary": { "Orange": "#FF6C0F (1585C)", "DeepGreen": "#124633 (3435C)" },
+    "fonts": { "ko": "윤고딕 / 윤명조", "en": "Frutiger / Palatino" },
+    "logo": "https://www.skku.edu/_res/skku/img/common/logo_o.png",
+    "note": "이 테마는 SKKU 공식 CI(Navy 주색 + Sungkyun Green 강조)를 사용한다. 강조 텍스트/카드헤드는 라임그린이 흰 배경에서 안 읽혀 DeepGreen(em_color)으로, 칩 글자는 네이비로 대비를 확보."
+  },
+  "colors": {
+    "navy":         "#072B61",
+    "navy_deep":    "#0B3D7A",
+    "navy_grad0":   "#04193D",
+    "gold":         "#8DC63F",
+    "ink":          "#1A1A1A",
+    "body":         "#1A1A1A",
+    "muted":        "#7C7C7C",
+    "gray":         "#888888",
+    "line":         "#D8D8D8",
+    "accent_orange":"#FF6C0F",
+    "accent_cyan":  "#00B0F0",
+    "accent_red":   "#FF0000",
+    "card_bg":      "#FFFFFF",
+    "page_bg":      "#FFFFFF",
+    "banner_g1":    "#E8EFE1",
+    "banner_g2":    "#D6E3C9",
+    "chip_text":    "#072B61",
+    "em_color":     "#124633"
+  },
+  "gradients": {
+    "numblock": "linear-gradient(45deg, #04193D 11%, #072B61 56%)",
+    "cover":    "linear-gradient(135deg, #E8EFE1 0%, #AFC58F 45%, #072B61 140%)",
+    "banner":   "linear-gradient(90deg, #E8EFE1 0%, rgba(245,248,242,0.6) 70%, #ffffff 100%)",
+    "timeline": "linear-gradient(270deg, #8DC63F 0%, #072B61 100%)"
+  },
+  "banner": {
+    "comment": "Reference CONTENT slides are white-bg with only numblock+chip+title. The light-gray header band here is an SNU-consistent generator addition; the real gray gradient lives on COVER/section full-bleed backgrounds (gradients.cover).",
+    "height_px": 84
+  },
+  "fonts": { "latin": "Arial", "ea": "Malgun Gothic" },
+  "type_pt": {
+    "cover_title": 40,
+    "title":       27,
+    "section":     22,
+    "subtitle":    20,
+    "body":        17,
+    "small":       14,
+    "caption":     14,
+    "number":      40,
+    "_scale_note": "Content slides use only 4 sizes: title 27 (display+KPI value), subtitle 20 (sub-heading box), body 17, caption 14 (FLOOR - nothing smaller). number 40 is the decorative numblock glyph only."
+  },
+  "box": {
+    "radius_px":  11,
+    "chip_radius":"999px",
+    "pad_px":     16,
+    "shadow":     "0 4px 9.3px rgba(0,0,0,0.40)",
+    "border":     "3px solid #072B61",
+    "card_border_w": 3
+  },
+  "layout": {
+    "w": 1280, "h": 720,
+    "margin_x": 42,
+    "banner_h": 84,
+    "body_top": 112,
+    "footer_h": 60
+  }
+}

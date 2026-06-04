@@ -1,0 +1,75 @@
+{
+  "name": "JNU",
+  "label": "Chonnam National University (전남대) green identity. Primitive-drawn (no reference deck / clone library). Token keys 'navy'/'gold' are reused as the school's PRIMARY (green) / ACCENT (navy) — names kept for script compatibility.",
+  "logo": "jnu.png",
+  "official_ci": {
+    "source": "https://www.jnu.ac.kr/MainIntro/Symbol/jnuUI",
+    "manual_pdf": "https://www.jnu.ac.kr/Data/tmfiles/Down/introduction/UI_Identity_Standards.pdf",
+    "primary": { "JNU_Green": "#007A33 (PANTONE 356C)" },
+    "secondary": { "Navy": "#003594 (661C)", "Yellow": "#F1B434 (143C)", "Burgundy": "#8A1538 (1955C)", "Brown": "#877669 (8003C)", "Silver": "#B4B7B9 (877C)" },
+    "fonts": { "proprietary": "전남대체 (CNU font)", "designated_ko_en": "KoPubWorld돋움체 (L/M/B)" },
+    "logo": {
+      "symbol_svg": "https://www.jnu.ac.kr/Data/tmfiles/images/sub/intro/symbol.svg",
+      "emblem_svg": "https://www.jnu.ac.kr/Data/tmfiles/images/sub/intro/emblem.svg",
+      "logo_kr_svg": "https://www.jnu.ac.kr/Data/tmfiles/images/sub/intro/logo_kr.svg",
+      "logo_en_svg": "https://www.jnu.ac.kr/Data/tmfiles/images/sub/intro/logo_en.svg"
+    },
+    "rules": { "clear_space": "0.2X (X=symbol width)", "min_size": "logotype 5mm / emblem 10mm" },
+    "note": "Render fonts fall back to Arial/Malgun (전남대체·KoPubWorld usually not installed)."
+  },
+  "colors": {
+    "navy":         "#007A33",
+    "navy_deep":    "#00682B",
+    "navy_grad0":   "#004D20",
+    "gold":         "#003594",
+    "ink":          "#1A1A1A",
+    "body":         "#1A1A1A",
+    "muted":        "#6E6E6D",
+    "gray":         "#B4B7B9",
+    "line":         "#D8D8D8",
+    "accent_orange":"#F1B434",
+    "accent_cyan":  "#003594",
+    "accent_red":   "#8A1538",
+    "card_bg":      "#FFFFFF",
+    "page_bg":      "#FFFFFF",
+    "banner_g1":    "#DCE9DF",
+    "banner_g2":    "#C2D9C9"
+  },
+  "gradients": {
+    "numblock": "linear-gradient(45deg, #004D20 11%, #007A33 56%)",
+    "cover":    "linear-gradient(135deg, #DCE9DF 0%, #AFC9B8 45%, #007A33 140%)",
+    "banner":   "linear-gradient(90deg, #DCE9DF 0%, rgba(244,248,245,0.6) 70%, #ffffff 100%)",
+    "timeline": "linear-gradient(270deg, #003594 0%, #007A33 100%)"
+  },
+  "banner": {
+    "comment": "JNU has no reference deck; light-green header band is a generator addition consistent with JNU CI.",
+    "height_px": 84
+  },
+  "fonts": { "latin": "Arial", "ea": "Malgun Gothic" },
+  "type_pt": {
+    "cover_title": 40,
+    "title":       27,
+    "section":     22,
+    "subtitle":    20,
+    "body":        17,
+    "small":       14,
+    "caption":     14,
+    "number":      40,
+    "_scale_note": "4-size content scale: title 27, subtitle 20, body 17, caption 14 (floor). number 40 = numblock glyph."
+  },
+  "box": {
+    "radius_px":  11,
+    "chip_radius":"999px",
+    "pad_px":     16,
+    "shadow":     "0 4px 9.3px rgba(0,0,0,0.40)",
+    "border":     "3px solid #007A33",
+    "card_border_w": 3
+  },
+  "layout": {
+    "w": 1280, "h": 720,
+    "margin_x": 42,
+    "banner_h": 84,
+    "body_top": 112,
+    "footer_h": 60
+  }
+}

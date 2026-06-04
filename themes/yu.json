@@ -1,0 +1,73 @@
+{
+  "name": "YU",
+  "label": "Yeungnam University (영남대) blue identity. Primitive-drawn (no reference deck / component clone library) — banner/cards are rendered from these tokens.",
+  "logo": "yu.png",
+  "official_ci": {
+    "source": "https://www.yu.ac.kr/main/intro/ui.do",
+    "main": { "YU_Blue": "#153974 (PANTONE 281C)", "YU_Sky_Blue": "#00AACA (PANTONE 3125C)" },
+    "sub": { "YU_Gray": "#9D9D9C", "YU_Beige": "#EAE3D2" },
+    "special": { "Green": "#0B612D", "Yellow": "#F0EC8F", "Gold": "PANTONE 874C (metallic)", "Silver": "PANTONE 877C (metallic)" },
+    "fonts": { "ko": "윤고딕 (Yoon Gothic)", "en": "Lucida Sans" },
+    "logo": {
+      "signature_svg": "https://www.yu.ac.kr/_res/yu/main/etc/img-logo-2023.svg",
+      "authority_mark_png": "https://www.yu.ac.kr/_res/yu/main/img/intro/img-au-mark-2023.png",
+      "communication_mark_png": "https://www.yu.ac.kr/_res/yu/main/img/intro/img-com-mark-2023.png"
+    },
+    "note": "HEX from RGB conversion of the official RGB spec. Render fonts fall back to Arial/Malgun (윤고딕·Lucida Sans usually not installed)."
+  },
+  "colors": {
+    "navy":         "#153974",
+    "navy_deep":    "#0E2A57",
+    "navy_grad0":   "#0A1E40",
+    "gold":         "#00AACA",
+    "ink":          "#1A1A1A",
+    "body":         "#1A1A1A",
+    "muted":        "#6E6E6D",
+    "gray":         "#9D9D9C",
+    "line":         "#D8D8D8",
+    "accent_orange":"#00AACA",
+    "accent_cyan":  "#00AACA",
+    "accent_red":   "#8A1538",
+    "card_bg":      "#FFFFFF",
+    "page_bg":      "#FFFFFF",
+    "banner_g1":    "#EAE3D2",
+    "banner_g2":    "#D8D0BC"
+  },
+  "gradients": {
+    "numblock": "linear-gradient(45deg, #0A1E40 11%, #153974 56%)",
+    "cover":    "linear-gradient(135deg, #EAE3D2 0%, #C9D2DE 45%, #153974 140%)",
+    "banner":   "linear-gradient(90deg, #EAE3D2 0%, rgba(245,243,238,0.6) 70%, #ffffff 100%)",
+    "timeline": "linear-gradient(270deg, #00AACA 0%, #153974 100%)"
+  },
+  "banner": {
+    "comment": "YU has no reference deck; banner gray/beige header band is a generator addition consistent with YU CI.",
+    "height_px": 84
+  },
+  "fonts": { "latin": "Arial", "ea": "Malgun Gothic" },
+  "type_pt": {
+    "cover_title": 40,
+    "title":       27,
+    "section":     22,
+    "subtitle":    20,
+    "body":        17,
+    "small":       14,
+    "caption":     14,
+    "number":      40,
+    "_scale_note": "4-size content scale: title 27, subtitle 20, body 17, caption 14 (floor). number 40 = numblock glyph."
+  },
+  "box": {
+    "radius_px":  11,
+    "chip_radius":"999px",
+    "pad_px":     16,
+    "shadow":     "0 4px 9.3px rgba(0,0,0,0.40)",
+    "border":     "3px solid #153974",
+    "card_border_w": 3
+  },
+  "layout": {
+    "w": 1280, "h": 720,
+    "margin_x": 42,
+    "banner_h": 84,
+    "body_top": 112,
+    "footer_h": 60
+  }
+}

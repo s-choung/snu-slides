@@ -1,0 +1,82 @@
+{
+  "theme": "skku",
+  "title": "계산화학 기반 촉매 설계",
+  "slides": [
+    {
+      "layout": "cover",
+      "title": "계산화학을 통한 촉매 연구",
+      "subtitle": "DFT · 머신러닝 퍼텐셜 · 디스크립터를 통합한 다중스케일 촉매 설계",
+      "presenter": "정석현 (Seokhyun Choung)",
+      "date": "2026. 06. 04."
+    },
+    {
+      "layout": "content",
+      "chapter": "01",
+      "section": "1.1",
+      "kicker": "Motivation",
+      "title": "왜 계산화학으로 촉매를 보는가",
+      "body": [
+        {"type": "h", "text": "실험만으로는 닿지 않는 영역", "accent": "navy"},
+        {"type": "bullets", "check": true, "items": [
+          "반응 중간체의 **수명이 ps~ns** 수준이라 in-situ 관측이 어려움 — 계산은 *원자 단위 스냅샷*을 제공",
+          "활성점 후보가 **10⁴~10⁶ 조합**으로 폭발 — 실험 스크리닝은 비용·시간이 비현실적",
+          "*전자구조*에서 활성·선택성의 기원을 직접 추적해 **설계 원리**로 환원"
+        ]},
+        {"type": "p", "text": "→ 계산화학은 *가설 생성*과 *후보 선별*을 가속하고, 실험은 검증에 집중하는 **closed-loop**를 만든다."}
+      ],
+      "footer": "핵심: 계산은 실험을 대체하지 않고 *탐색 공간을 좁힌다*"
+    },
+    {
+      "layout": "cards",
+      "chapter": "02",
+      "section": "2.1",
+      "kicker": "Methodology",
+      "title": "다중스케일 계산 스택",
+      "cols": 3,
+      "cards": [
+        {"head": "DFT", "accent": "navy", "text": "흡착에너지·전이상태·d-band center를 *제일원리*로 계산. 정확도 기준점(ground truth)을 제공하지만 *수백 원자* 규모에서 멈춤."},
+        {"head": "ML 퍼텐셜", "accent": "gold", "text": "DFT 데이터로 학습한 **MLIP**(NequIP·MACE)로 *DFT 정확도 × MD 속도*. 나노입자·동역학·앙상블 샘플링까지 확장."},
+        {"head": "Microkinetics", "accent": "navy", "text": "계산된 에너지를 **반응속도식**에 넣어 *turnover frequency*·rate-determining step·반응차수를 실험과 직접 비교."}
+      ],
+      "footer": "원자 → 나노입자 → 반응기 조건까지 *스케일을 잇는* 파이프라인"
+    },
+    {
+      "layout": "content",
+      "chapter": "03",
+      "section": "3.1",
+      "kicker": "Design Principle",
+      "title": "디스크립터와 스케일링 관계",
+      "body": [
+        {"type": "h", "text": "복잡한 활성을 몇 개의 변수로 압축", "accent": "navy"},
+        {"type": "cards", "cols": 2, "items": [
+          {"head": "스케일링 관계", "accent": "navy", "text": "흡착종 에너지들이 *선형*으로 묶여, **단일 디스크립터**(예: O 흡착에너지)만으로 활성 예측이 가능하다."},
+          {"head": "Sabatier 화산형", "accent": "gold", "text": "결합이 너무 약하면 활성화 못 하고, 너무 강하면 피독 — *활성에는 최적점*이 존재한다."}
+        ]},
+        {"type": "kpi", "items": [
+          {"value": "1~2", "label": "지배 디스크립터 수"},
+          {"value": "<0.2 eV", "label": "목표 예측 오차"}
+        ]}
+      ],
+      "footer": "스케일링의 *한계를 깨는* 비선형 활성점(다중금속·계면)이 차세대 설계의 표적"
+    },
+    {
+      "layout": "cards",
+      "chapter": "04",
+      "section": "4.1",
+      "kicker": "Workflow",
+      "title": "ML 스크리닝 → 실험 검증 루프",
+      "cols": 3,
+      "cards": [
+        {"head": "① 생성", "accent": "navy", "text": "조성·표면·결함을 조합해 *수만 개* 구조 후보를 자동 생성하고 MLIP로 안정성 1차 필터."},
+        {"head": "② 예측", "accent": "gold", "text": "디스크립터·그래프 신경망으로 활성·선택성을 회귀, *불확실성 정량화*로 다음 계산을 능동 선택(active learning)."},
+        {"head": "③ 검증", "accent": "navy", "text": "상위 후보만 합성·평가해 데이터를 회수, 모델을 재학습하는 *closed-loop*로 발견을 가속."}
+      ],
+      "footer": "사례: 합금 산소환원 촉매에서 *후보 1만 → 실험 10여 개*로 압축"
+    },
+    {
+      "layout": "closing",
+      "title": "Thank You",
+      "subtitle": "계산화학 × 머신러닝으로 촉매 설계의 탐색 공간을 좁힌다"
+    }
+  ]
+}
