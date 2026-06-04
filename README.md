@@ -9,11 +9,16 @@ faithfully clone an existing `.pptx` to HTML.
 
 ## Themes
 
-| theme | school | palette | components |
+| theme | identity | palette | components |
 |---|---|---|---|
+| `snu`  | signature (원본 레퍼런스) | navy `#0F0F70` / gold `#C5A86F` | OOXML clone — faithful PowerPoint shapes |
 | `skku` | 성균관대 | navy `#072B61` / green `#8DC63F` | OOXML clone — faithful PowerPoint shapes |
 | `yu`   | 영남대 | blue `#153974` / cyan `#00AACA` | primitive (token-drawn) |
 | `jnu`  | 전남대 | green `#007A33` / navy `#003594` | primitive (token-drawn) |
+
+`snu` is the original navy/gold identity this toolkit was built from (token guide:
+`DESIGN_SYSTEM.md`); `skku` is a re-color of the same component clone to the
+official 성균관대 CI.
 
 ## Quick start
 
@@ -36,10 +41,11 @@ Needs Python with `lxml` + `python-pptx`. PPT→HTML clone and audit also need
 
 ## Benchmark
 
-`samples/benchmark_snu.html` — a 2×3 gallery of a 6-slide SKKU deck on
-*"계산화학을 통한 촉매 연구"* (computational chemistry for catalysis), generated
-from `samples/benchmark_catalysis.slidespec.json`. Open it to see the theme,
-layouts (cover · content · cards · KPI · closing), and the gallery view.
+`samples/benchmark_snu.html` — a 2×3 gallery of a 6-slide `snu`-theme
+(navy/gold) deck on *"계산화학을 통한 촉매 연구"* (computational chemistry for
+catalysis), generated from `samples/benchmark_catalysis.slidespec.json`. Open it
+to see the theme, layouts (cover · content · cards · KPI · closing), and the
+gallery view.
 
 ## Docs
 
