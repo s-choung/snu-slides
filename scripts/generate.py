@@ -183,7 +183,7 @@ b{{color:{c.get('bold_color', c['navy'])};font-weight:700}}
 .chip{{position:absolute;left:129px;top:40px;background:{c['gold']};color:{c.get('chip_text','#fff')};
  font-size:{px(ty['small'])};font-weight:700;border-radius:999px;padding:3px 14px;
  display:inline-flex;align-items:center;line-height:1}}
-.title{{position:absolute;left:206px;top:0;height:{ly['banner_h']}px;right:{ly['margin_x']}px;
+.title{{position:absolute;left:206px;top:27px;height:52px;right:{ly['margin_x']}px;
  display:flex;align-items:center;color:{c['ink']};font-size:{px(ty['title'])};font-weight:400}}
 /* body */
 .body{{position:absolute;left:{ly['margin_x']}px;right:{ly['margin_x']}px;

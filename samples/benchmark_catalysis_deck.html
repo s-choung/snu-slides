@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="ko"><head><meta charset="utf-8">
-<title>Computational Catalysis Design</title><style>
+<title>Computational Catalysis and Emerging Materials Laboratory</title><style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{height:100%;background:#000;overflow:hidden;font-family:'Arial','Malgun Gothic',sans-serif;color:#000000}
 #stage{position:absolute;left:50%;top:50%;width:1280px;height:720px;
@@ -11,7 +11,7 @@ html,body{height:100%;background:#000;overflow:hidden;font-family:'Arial','Malgu
 b{color:#C00000;font-weight:700}
 /* banner */
 .banner{position:absolute;top:0;left:0;right:0;height:84px}
-.bannerbg{position:absolute;inset:0;background:linear-gradient(90deg, rgba(15,15,112,0.012) 0%, rgba(15,15,112,0) 55%, #ffffff 100%)}
+.bannerbg{position:absolute;inset:0;background:linear-gradient(90deg, #CFCFCF 0%, #E6E6E6 55%, #F7F7F7 100%)}
 .numblock{position:absolute;left:0;top:0;width:84px;height:84px;
  background:linear-gradient(315deg, #060634 11%, #0F0F70 56%);color:#fff;font-size:53.3px;font-weight:700;
  display:flex;align-items:center;justify-content:center;letter-spacing:1px}
@@ -20,7 +20,7 @@ b{color:#C00000;font-weight:700}
 .chip{position:absolute;left:129px;top:40px;background:#C5A86F;color:#FFFFFF;
  font-size:18.7px;font-weight:700;border-radius:999px;padding:3px 14px;
  display:inline-flex;align-items:center;line-height:1}
-.title{position:absolute;left:206px;top:0;height:84px;right:42px;
+.title{position:absolute;left:206px;top:27px;height:52px;right:42px;
  display:flex;align-items:center;color:#000000;font-size:36.0px;font-weight:400}
 /* body */
 .body{position:absolute;left:42px;right:42px;
@@ -85,7 +85,7 @@ b{color:#C00000;font-weight:700}
 #hud{position:fixed;right:14px;bottom:10px;color:#999;font:12px Arial;
  background:rgba(0,0,0,.4);padding:3px 8px;border-radius:10px;z-index:99}
 </style></head><body>
-<div id="stage"><section class="slide cover"><div class="cover-bar"></div><div class="cover-mid"><h1>Computational Chemistry for Catalysis</h1><div class="cover-rule"></div><div class="cover-sub">Multiscale catalyst design integrating DFT, machine-learning potentials, and descriptors</div></div><div class="cover-band"><span class="cb-pres">Seokhyun Choung</span><span class="cb-date">June 4, 2026</span></div></section>
+<div id="stage"><section class="slide cover"><div class="cover-bar"></div><div class="cover-mid"><h1>Computational Catalysis and Emerging Materials Laboratory</h1><div class="cover-rule"></div><div class="cover-sub">Multiscale catalyst design integrating DFT, machine-learning potentials, and descriptors</div></div><div class="cover-band"><span class="cb-pres">Seokhyun Choung</span><span class="cb-date">June 4, 2026</span></div></section>
 <section class="slide"><div class="banner"><div class="bannerbg"></div><div class="numblock"><span class="nl">0</span>1</div><div class="kicker">Motivation</div><span class="chip">1.1</span><div class="title"><span>Why Study Catalysis Computationally</span></div></div><div class="body"><div class="subbar navy">Reaching what experiments cannot</div><ul class="bl check"><li>Reaction intermediates live for only <b>ps–ns</b>, so in-situ observation is hard — computation delivers <span class="em">atomic-scale snapshots</span></li><li>Active-site candidates explode to <b>10⁴–10⁶</b> combinations — purely experimental screening is too costly and slow</li><li>Trace activity and selectivity back to their <span class="em">electronic-structure</span> origin, distilling them into <b>design principles</b></li></ul><p class="bp">→ Computation accelerates <span class="em">hypothesis generation</span> and <span class="em">candidate selection</span>, letting experiments focus on validation — a <b>closed loop</b>.</p></div><div class="footer"><span>Key idea: computation does not replace experiment — it <span class="em">narrows the search space</span></span></div></section>
 <section class="slide"><div class="banner"><div class="bannerbg"></div><div class="numblock"><span class="nl">0</span>2</div><div class="kicker">Methodology</div><span class="chip">2.1</span><div class="title"><span>A Multiscale Computational Stack</span></div></div><div class="body"><div class="cardgrid" style="grid-template-columns:repeat(3,1fr)"><div class="card navy"><div class="card-h navy">DFT</div><div class="card-b">Adsorption energies, transition states, and the d-band center from <span class="em">first principles</span>. The accuracy benchmark (ground truth), but it stalls at the <span class="em">few-hundred-atom</span> scale.</div></div><div class="card navy"><div class="card-h navy">ML Potentials</div><div class="card-b"><b>MLIPs</b> (NequIP, MACE) trained on DFT give <span class="em">DFT accuracy at MD speed</span> — extending to nanoparticles, dynamics, and ensemble sampling.</div></div><div class="card navy"><div class="card-h navy">Microkinetics</div><div class="card-b">Feed computed energies into <b>rate equations</b> to compare <span class="em">turnover frequency</span>, the rate-determining step, and reaction orders directly with experiment.</div></div></div></div><div class="footer"><span>A pipeline that <span class="em">bridges scales</span> — from atoms to nanoparticles to reactor conditions</span></div></section>
 <section class="slide"><div class="banner"><div class="bannerbg"></div><div class="numblock"><span class="nl">0</span>3</div><div class="kicker">Design Principle</div><span class="chip">3.1</span><div class="title"><span>Descriptors and Scaling Relations</span></div></div><div class="body"><div class="subbar navy">Compressing complex activity into a few variables</div><div class="cardgrid" style="grid-template-columns:repeat(2,1fr);height:auto"><div class="card navy"><div class="card-h navy">Scaling relations</div><div class="card-b">Adsorbate energies are <span class="em">linearly</span> coupled, so a <b>single descriptor</b> (e.g. O binding energy) can predict activity.</div></div><div class="card navy"><div class="card-h navy">Sabatier volcano</div><div class="card-b">Bind too weakly and nothing activates; bind too strongly and the surface poisons — <span class="em">an optimum exists</span>.</div></div></div><div class="kpirow"><div class="kpi"><div class="kv">1–2</div><div class="kl">governing descriptors</div></div><div class="kpi"><div class="kv">&lt;0.2 eV</div><div class="kl">target prediction error</div></div></div></div><div class="footer"><span>Next-generation design targets sites that <span class="em">break scaling</span> — multimetallics and interfaces</span></div></section>

@@ -1,10 +1,10 @@
 {
   "theme": "snu",
-  "title": "Computational Catalysis Design",
+  "title": "Computational Catalysis and Emerging Materials Laboratory",
   "slides": [
     {
       "layout": "cover",
-      "title": "Computational Chemistry for Catalysis",
+      "title": "Computational Catalysis and Emerging Materials Laboratory",
       "subtitle": "Multiscale catalyst design integrating DFT, machine-learning potentials, and descriptors",
       "presenter": "Seokhyun Choung",
       "date": "June 4, 2026"

@@ -34,7 +34,7 @@
   "gradients": {
     "numblock": "linear-gradient(315deg, #060634 11%, #0F0F70 56%)",
     "cover":    "linear-gradient(135deg, #0C1238 0%, #0F0F70 60%, #060634 140%)",
-    "banner":   "linear-gradient(90deg, rgba(15,15,112,0.012) 0%, rgba(15,15,112,0) 55%, #ffffff 100%)",
+    "banner":   "linear-gradient(90deg, #CFCFCF 0%, #E6E6E6 55%, #F7F7F7 100%)",
     "timeline": "linear-gradient(180deg, #C5A86F 0%, #0F0F70 37%)"
   },
   "banner": {
