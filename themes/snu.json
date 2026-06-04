@@ -27,13 +27,14 @@
     "banner_g1":    "#E9E9F2",
     "banner_g2":    "#D7D7E6",
     "chip_text":    "#FFFFFF",
+    "check_color":  "#0F0F70",
     "bold_color":   "#C00000",
     "em_color":     "#C00000"
   },
   "gradients": {
     "numblock": "linear-gradient(315deg, #060634 11%, #0F0F70 56%)",
     "cover":    "linear-gradient(135deg, #0C1238 0%, #0F0F70 60%, #060634 140%)",
-    "banner":   "linear-gradient(90deg, rgba(15,15,112,0.035) 0%, rgba(255,255,255,0.85) 55%, #ffffff 100%)",
+    "banner":   "linear-gradient(90deg, rgba(15,15,112,0.012) 0%, rgba(15,15,112,0) 55%, #ffffff 100%)",
     "timeline": "linear-gradient(180deg, #C5A86F 0%, #0F0F70 37%)"
   },
   "banner": {

@@ -197,7 +197,7 @@ b{{color:{c.get('bold_color', c['navy'])};font-weight:700}}
 .bl{{list-style:none;margin:6px 0;font-size:{px(ty['body'])};line-height:1.5}}
 .bl li{{padding-left:22px;position:relative;margin:3px 0}}
 .bl.dot li::before{{content:'•';position:absolute;left:4px;color:{c['navy']}}}
-.bl.check li::before{{content:'✓';position:absolute;left:2px;color:{c['gold']};font-weight:700}}
+.bl.check li::before{{content:'✓';position:absolute;left:2px;color:{c.get('check_color', c['gold'])};font-weight:700}}
 /* cards */
 .cardgrid,.cols{{display:grid;gap:18px;height:100%}}
 .card{{background:#fff;border:{bx['card_border_w']}px solid {c['navy']};

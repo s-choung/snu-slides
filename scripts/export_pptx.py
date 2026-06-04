@@ -134,7 +134,9 @@ def set_para(p, text, size_pt, color, theme, bold=False, align=PP_ALIGN.LEFT, bu
     if bullet:
         r = p.add_run(); r.text = bullet + "  "
         r.font.size = Pt(size_pt); r.font.bold = True
-        r.font.color.rgb = hexc(theme["colors"]["gold" if bullet == "✓" else "navy"])
+        mk = (theme["colors"].get("check_color", theme["colors"]["gold"])
+              if bullet == "✓" else theme["colors"]["navy"])
+        r.font.color.rgb = hexc(mk)
     add_runs(p, text, theme, color)
     for r in p.runs:
         if r.font.size is None: r.font.size = Pt(size_pt)
